@@ -34,10 +34,7 @@ where amount < 4000
 group by O.state
 limit 1;
 
--- What is the Most Common City for Orders? (DOUBT)
-select "city", "order_id"
-from sales_orders
-
+-- What is the Most Common City for Orders? 
 SELECT "city", COUNT(*) AS "Num_Of_Orders"
 FROM sales_orders
 GROUP BY "city"
@@ -49,12 +46,7 @@ select "order_id", round(avg("quantity")) as Avg_Qty
 from sales_details
 group by "order_id";
 
--- Which payment mode is the most popular? (DOUBT)
-select "paymentmode", "category"
-from sales_details
-group by "category" and 
-limit 1
-
+-- Which payment mode is the most popular? 
 SELECT "paymentmode", COUNT(*) AS "NumOrders"
 FROM sales_details
 GROUP BY "paymentmode"
