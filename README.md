@@ -1,2 +1,2 @@
 # SQL_Sales_Data
-A collection of sample &amp; my SQL files.
+An SQL project to analyse the sales data.
